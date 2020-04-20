@@ -20,5 +20,5 @@
         <property name="templateEngine" ref="templateEngine" />
         <property name="characterEncoding" value="UTF-8"/>
     </bean>
-    <context:component-scan base-package="springMVCtest" />
+    <context:component-scan base-package="springMVC.sample" />
 </beans>

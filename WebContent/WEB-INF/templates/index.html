@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<title>初期表示</title>
+</head>
+<body>
+  <h1>メッセージ</h1>
+  <form action="test" method="post">
+    <input type="text" name="text" th:value="${indexForm.text}"> <input
+      type="submit" name="button" value="送信する">
+  </form>
+  <form action="test" method="post">
+    <input type="text" name="text2" th:value="${indexForm.text2}">
+    <input type="submit" name="button2" value="送信する">
+  </form>
+</body>
+</html>
