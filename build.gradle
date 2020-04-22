@@ -34,6 +34,8 @@ dependencies {
 
     api 'org.springframework:spring-webmvc:5.2.5.RELEASE'
     api 'org.thymeleaf:thymeleaf-spring5:3.0.11.RELEASE'
+    api 'org.springframework.security:spring-security-web:5.3.1.RELEASE'
+    api 'org.springframework.security:spring-security-config:5.3.1.RELEASE'
 
     // Use JUnit test framework
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.2'

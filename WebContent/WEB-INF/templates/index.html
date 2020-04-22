@@ -5,14 +5,9 @@
 <title>初期表示</title>
 </head>
 <body>
-  <h1>メッセージ</h1>
-  <form action="test" method="post">
-    <input type="text" name="text" th:value="${indexForm.text}"> <input
-      type="submit" name="button" value="送信する">
-  </form>
-  <form action="test" method="post">
-    <input type="text" name="text2" th:value="${indexForm.text2}">
-    <input type="submit" name="button2" value="送信する">
+  <h1>初期表示</h1>
+  <form th:action="@{/test}" method="get">
+    <input type="submit" name="button" value="テスト画面へ">
   </form>
 </body>
 </html>

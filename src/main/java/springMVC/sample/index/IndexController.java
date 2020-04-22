@@ -17,10 +17,12 @@ public class IndexController extends AbstractSampleController {
 
     @Autowired
     IndexService service;
+    @Autowired
+    IndexForm form;
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/", method = { RequestMethod.GET, RequestMethod.POST })
     public String index(Model model) {
-        service.initialize(model);
+        service.initialize(model, form);
         return service.getViewName();
     }
 }

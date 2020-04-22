@@ -9,5 +9,11 @@
   <input type="text" th:value="${testForm.text}">
   <br>
   <input type="text" th:value="${testForm.text2}">
+  <form th:action="@{/logout}" method="post">
+  <input type="submit" value="ログアウト">
+  </form>
+  <form th:action="@{/}" method="get">
+  <input type="submit" value="ログアウトせずに戻る">
+  </form>
 </body>
 </html>

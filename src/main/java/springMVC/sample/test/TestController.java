@@ -15,11 +15,13 @@ public class TestController extends AbstractSampleController {
 
     @Autowired
     TestService service;
+    @Autowired
+    TestForm form;
 
     @RequestMapping(value = "/test", method = { RequestMethod.POST, RequestMethod.GET })
     public String test(Model model, @ModelAttribute IndexForm index) {
-        service.initialize(model);
-        service.setText(index);
+        service.initialize(model, form);
+        service.setText("Hello", "World");
         return service.getViewName();
     }
 }
