@@ -1,8 +1,8 @@
-package springMVC.sample.error;
+package springMVC.sample.form.error;
 
 import org.springframework.stereotype.Component;
 
-import springMVC.sample.AbstractSampleForm;
+import springMVC.sample.form.AbstractSampleForm;
 
 /**
  *

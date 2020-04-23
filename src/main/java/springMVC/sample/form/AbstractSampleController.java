@@ -1,10 +1,10 @@
-package springMVC.sample;
+package springMVC.sample.form;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 
-import springMVC.sample.error.ErrorForm;
+import springMVC.sample.form.error.ErrorForm;
 
 /**
  * コントロールクラスの継承用

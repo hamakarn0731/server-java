@@ -1,4 +1,4 @@
-package springMVC.sample;
+package springMVC.sample.form;
 
 /**
  * フォームクラスの継承用

@@ -1,8 +1,8 @@
-package springMVC.sample.index;
+package springMVC.sample.form.index;
 
 import org.springframework.stereotype.Component;
 
-import springMVC.sample.AbstractSampleForm;
+import springMVC.sample.form.AbstractSampleForm;
 
 @Component
 public class IndexForm extends AbstractSampleForm {

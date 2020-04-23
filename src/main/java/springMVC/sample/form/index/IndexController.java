@@ -1,4 +1,4 @@
-package springMVC.sample.index;
+package springMVC.sample.form.index;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -6,7 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import springMVC.sample.AbstractSampleController;
+import springMVC.sample.form.AbstractSampleController;
 
 /**
  * 初期表示用のコントローラー

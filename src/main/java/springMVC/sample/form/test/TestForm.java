@@ -1,8 +1,8 @@
-package springMVC.sample.test;
+package springMVC.sample.form.test;
 
 import org.springframework.stereotype.Component;
 
-import springMVC.sample.AbstractSampleForm;
+import springMVC.sample.form.AbstractSampleForm;
 
 @Component
 public class TestForm extends AbstractSampleForm {

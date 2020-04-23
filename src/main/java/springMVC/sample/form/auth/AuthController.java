@@ -1,11 +1,11 @@
-package springMVC.sample.auth;
+package springMVC.sample.form.auth;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import springMVC.sample.AbstractSampleController;
+import springMVC.sample.form.AbstractSampleController;
 
 /**
  * ログイン画面のコントローラー

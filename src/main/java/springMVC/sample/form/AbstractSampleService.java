@@ -1,4 +1,4 @@
-package springMVC.sample;
+package springMVC.sample.form;
 
 import org.springframework.ui.Model;
 
