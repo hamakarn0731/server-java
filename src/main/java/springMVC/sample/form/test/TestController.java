@@ -19,24 +19,21 @@ public class TestController extends AbstractSampleController {
 
     @Autowired
     TestService service;
-    @Autowired
-    TestForm form;
 
     @RequestMapping(value = "/test", method = { RequestMethod.POST, RequestMethod.GET })
     public String test(Model model, @ModelAttribute IndexForm index) {
         AuthDummyDao dao = new AuthDummyDaoImpl();
-        UserInfo user = AppConfig.singleton().getTransactionManager().required(()->{
+        UserInfo user = AppConfig.singleton().getTransactionManager().required(() -> {
             UserInfo tmp;
             try {
                 tmp = dao.selectById("AA");
-            }catch (Exception e){
+            } catch (Exception e) {
                 System.out.println(e);
                 tmp = new UserInfo();
             }
             return tmp;
         });
-
-        service.initialize(model, form);
+        service.initialize(model);
         service.setText("Hello", user.getPassword());
         return service.getViewName();
     }

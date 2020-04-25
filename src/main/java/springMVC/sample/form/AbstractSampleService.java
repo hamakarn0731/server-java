@@ -8,8 +8,6 @@ import org.springframework.ui.Model;
  */
 public abstract class AbstractSampleService<Form extends AbstractSampleForm> {
 
-    Form form;
-
     /**
      *
      * 対応するhtmlの名前
@@ -31,9 +29,8 @@ public abstract class AbstractSampleService<Form extends AbstractSampleForm> {
      *
      * @param model
      */
-    public void initialize(Model model, Form form) {
-        model.addAttribute(form);
-        setForm(form);
+    public void initialize(Model model) {
+        model.addAttribute(this.getForm());
     }
 
     /**
@@ -42,11 +39,5 @@ public abstract class AbstractSampleService<Form extends AbstractSampleForm> {
     *
     * @return
     */
-    public Form getForm() {
-        return form;
-    }
-
-    protected void setForm(Form form) {
-        this.form = form;
-    }
+    public abstract Form getForm();
 }
