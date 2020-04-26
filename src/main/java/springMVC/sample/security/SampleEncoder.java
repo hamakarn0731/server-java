@@ -12,7 +12,7 @@ public class SampleEncoder implements PasswordEncoder {
     @Override
     public String encode(CharSequence rawPassword) {
         if (rawPassword == null) {
-            return "null";
+            return "";
         }
         return rawPassword.toString();
     }

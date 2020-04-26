@@ -1,6 +1,5 @@
 package springMVC.sample;
 
-import javax.servlet.ServletContext;
 import javax.sql.DataSource;
 
 import org.seasar.doma.SingletonConfig;
@@ -10,8 +9,6 @@ import org.seasar.doma.jdbc.dialect.SqliteDialect;
 import org.seasar.doma.jdbc.tx.LocalTransactionDataSource;
 import org.seasar.doma.jdbc.tx.LocalTransactionManager;
 import org.seasar.doma.jdbc.tx.TransactionManager;
-import org.springframework.web.context.request.RequestContextHolder;
-import org.springframework.web.context.request.ServletRequestAttributes;
 import org.sqlite.JDBC;
 
 @SingletonConfig
@@ -26,14 +23,13 @@ public class AppConfig implements Config {
     private final TransactionManager transactionManager;
 
     private AppConfig() {
-        ServletContext context = ((ServletRequestAttributes) RequestContextHolder.getRequestAttributes()).getRequest().getServletContext();
         try {
             Class.forName(JDBC.class.getName());
         } catch (ClassNotFoundException e) {
             //↑この書き方でClassNotFoundExceptionはない
         }
         dialect = new SqliteDialect();
-        dataSource = new LocalTransactionDataSource("jdbc:sqlite:" + context.getRealPath("/WEB-INF/dummy/test.db"), null, null);
+        dataSource = new LocalTransactionDataSource("jdbc:sqlite:C:\\DB\\test.db", null, null);
         transactionManager = new LocalTransactionManager(dataSource.getLocalTransaction(getJdbcLogger()));
     }
 
