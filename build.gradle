@@ -15,20 +15,10 @@ plugins {
     id 'eclipse-wtp'
 }
 
-task copyDomaResources(type: Sync)  {
-    from sourceSets.main.resources.srcDirs
-    into compileJava.destinationDir
-    include 'doma.compile.config'
-    include 'META-INF/**/*.sql'
-    include 'META-INF/**/*.script'
-}
-
 // エンコーディング
 def defaultEncoding = 'UTF-8'
 
 compileJava {
-    // Depend on the above task
-    dependsOn copyDomaResources
     options.encoding = defaultEncoding
 }
 compileTestJava {

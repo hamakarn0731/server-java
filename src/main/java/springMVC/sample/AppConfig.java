@@ -2,19 +2,18 @@ package springMVC.sample;
 
 import javax.sql.DataSource;
 
-import org.seasar.doma.SingletonConfig;
 import org.seasar.doma.jdbc.Config;
 import org.seasar.doma.jdbc.dialect.Dialect;
 import org.seasar.doma.jdbc.dialect.SqliteDialect;
 import org.seasar.doma.jdbc.tx.LocalTransactionDataSource;
 import org.seasar.doma.jdbc.tx.LocalTransactionManager;
 import org.seasar.doma.jdbc.tx.TransactionManager;
-import org.sqlite.JDBC;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
-@SingletonConfig
+@Configuration("config")
+@Scope("singleton")
 public class AppConfig implements Config {
-
-    private static final AppConfig CONFIG = new AppConfig();
 
     private final Dialect dialect;
 
@@ -22,11 +21,11 @@ public class AppConfig implements Config {
 
     private final TransactionManager transactionManager;
 
-    private AppConfig() {
+    public AppConfig() {
         try {
-            Class.forName(JDBC.class.getName());
+            Class.forName("org.sqlite.JDBC");
         } catch (ClassNotFoundException e) {
-            //↑この書き方でClassNotFoundExceptionはない
+            throw new RuntimeException();
         }
         dialect = new SqliteDialect();
         dataSource = new LocalTransactionDataSource("jdbc:sqlite:C:\\DB\\test.db", null, null);
@@ -46,9 +45,5 @@ public class AppConfig implements Config {
     @Override
     public TransactionManager getTransactionManager() {
         return transactionManager;
-    }
-
-    public static AppConfig singleton() {
-        return CONFIG;
     }
 }
