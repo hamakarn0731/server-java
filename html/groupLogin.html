@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tabmenu.css">
+    <script type="text/javascript" src="../js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="../js/tabmenu.js"></script>
+    <title>団体ログイン</title>
+</head>
+
+<body>
+    <div class="pankuzu">
+        <ul>
+            <li>
+                <a href="/">TOP</a>
+            </li>
+            <li> 団体ログイン</li>
+        </ul>
+    </div>
+    <h1 class="headline">団体ログイン</h1>
+    <div class="admins_signup">
+        <h2>サークル・学生団体を掲載するには「団体アカウント」が必要です。</h2>
+        <h3 class="merit1">サークル・団体の掲載は無料です！</h3>
+        <h3 class="merit2">サークル・団体の新入会員を募集できます！</h3>
+        <h3 class="merit3">サークル・団体をアピールできる機能が満載！</h3>
+        <ul class="tab_btns">
+            <li class="tab_btn active_btn" href="#item1">団体アカウントをお持ちでない方</li>
+            <li class="tab_btn" href="#item2">団体アカウントをお持ちの方</li>
+        </ul>
+        <div class="tab_contents">
+            <div class="box active_box" id="item1">
+                <h2>サークル・学生団体を登録する</h2>
+                <div class="admins_login">
+                    <table class="table1 admins_login_table">
+                        <tbody>
+                            <tr>
+                                <th>メールアドレス <span class="essential">必須</span></th>
+                                <td>
+                                    <div class="input text">
+                                        <input name="email_signup" class="table_text_box" type="text">
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="admins_submit_btn" type="submit">送信する</button>
+                </div>
+            </div>
+            <div class="box" id="item2">
+                <h2>ログイン</h2>
+                <div class="admins_login">
+                    <form action="/admins/login/#login" id="CircleLoginForm" method="post" accept-charset="utf-8">
+                        <table class="table1 admins_login_table">
+                            <tbody>
+                                <tr>
+                                    <th>メールアドレス<span class="essential">必須</span></th>
+                                    <td>
+                                        <div class="input text">
+                                            <input name="email_login" novalidate="novalidate" class="table_text_box"
+                                                type="text">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>パスワード<span class="essential">必須</span></th>
+                                    <td>
+                                        <div class="input password">
+                                            <input name="password_login" class="table_text_box" type="password">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <a href="/" class="reset_link">⇒パスワードをお忘れの方はコチラ</a>
+                        <div class="submit">
+                            <input class="admins_submit_btn" type="submit" value="ログインする">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

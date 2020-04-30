@@ -1,0 +1,31 @@
+.box {
+  display: none;
+  padding: 10px;
+  clear: both;
+}
+.active_box {
+  display: block;
+  background-color: gray;
+}
+.tab_btn{
+  opacity: 0.5;
+  padding: 10px;
+  background-color: slategray;
+}
+.active_btn{
+  opacity: 1;
+  background-color: gray;
+}
+.tab_btns{
+  margin: 0%;
+  padding: 0%;
+}
+li{
+  list-style: none;
+  float: left;
+  margin: 0%;
+  padding: 0%;
+}
+.headline{
+  clear: both;
+}
