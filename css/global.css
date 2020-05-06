@@ -1,5 +1,10 @@
 :root{
-    --collor1: #f5b2b2;
-    --collor2: #b3f5b3;
-    --collor3: #b3b3f5;
+    --collor-main: #f5b2b2;
+    --collor-sub: #b3f5b3;
+    --collor-yobi: #b3b3f5;
+    --collor-back: silver;
+}
+body{
+    width: 750px;
+    margin:0 auto;
 }

@@ -7,16 +7,16 @@
 }
 .active_box {
   display: block;
-  background-color: var(--collor1);
+  background-color: var(--collor-back);
 }
 .tab_btn{
   opacity: 0.5;
   padding: 10px;
-  background-color: var(--collor1);
+  background-color: var(--collor-main);
 }
 .active_btn{
   opacity: 1;
-  background-color: var(--collor1);
+  background-color: var(--collor-main);
 }
 .tab_btns{
   margin: 0%;
