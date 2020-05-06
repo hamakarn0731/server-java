@@ -1,3 +1,5 @@
+@import url("./global.css");
+
 .box {
   display: none;
   padding: 10px;
@@ -5,16 +7,16 @@
 }
 .active_box {
   display: block;
-  background-color: gray;
+  background-color: var(--collor1);
 }
 .tab_btn{
   opacity: 0.5;
   padding: 10px;
-  background-color: slategray;
+  background-color: var(--collor1);
 }
 .active_btn{
   opacity: 1;
-  background-color: gray;
+  background-color: var(--collor1);
 }
 .tab_btns{
   margin: 0%;
