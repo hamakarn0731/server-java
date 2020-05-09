@@ -2,18 +2,25 @@
   display: none;
   padding: 10px;
   clear: both;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  height: 180px;
+  position: relative;
 }
 .active_box {
   display: block;
-  background-color: var(--collor-main);
+  background: linear-gradient(var(--collor-main-gra),var(--collor-main));
 }
 .tab_btn{
   opacity: 0.5;
   padding: 10px;
-  background-color: var(--collor-main);
+  background-color: var(--collor-main-gra);
   list-style: none;
   float: left;
   margin: 0%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .active_btn{
   opacity: 1;
@@ -22,6 +29,13 @@
   margin: 0%;
   padding: 0%;
 }
+.tab_contents{
+  margin:0 auto;
+}
 .headline{
   clear: both;
+}
+.box_title{
+  color: white;
+  font-size: 150%;
 }
