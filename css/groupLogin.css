@@ -1,0 +1,48 @@
+@import url("./global.css");
+@import url("./tabmenu.css");
+
+.headline{
+    background-color: var(--collor-main);
+    text-align: center;
+}
+h2{
+
+}
+.merit{
+    list-style-position: inside;
+    border-bottom: 1px solid;
+    font-size: large;
+}
+h2{
+    border-bottom: 1px solid var(--collor-sub);
+}
+table{
+    table-layout: fixed;
+}
+table{
+    border: 1px solid;
+    border-spacing: 0px;
+}
+th{
+    text-align: left;
+    background-color: var(--collor-sub);
+    margin: 0px;
+    padding: 10px 5px;
+    width: 200px;
+}
+td{
+    margin: 0px;
+    padding: 5px 10px;
+}
+.input{
+    margin: 0px;
+}
+.essential{
+    background-color: var(--collor-yobi);
+    float: right;
+    border: 1px solid;
+}
+.table_text_box{
+    width: 350px;
+    height: 20px;
+}

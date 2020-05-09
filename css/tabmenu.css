@@ -1,5 +1,3 @@
-@import url("./global.css");
-
 .box {
   display: none;
   padding: 10px;
@@ -7,24 +5,20 @@
 }
 .active_box {
   display: block;
-  background-color: var(--collor-back);
+  background-color: var(--collor-main);
 }
 .tab_btn{
   opacity: 0.5;
   padding: 10px;
   background-color: var(--collor-main);
+  list-style: none;
+  float: left;
+  margin: 0%;
 }
 .active_btn{
   opacity: 1;
-  background-color: var(--collor-main);
 }
 .tab_btns{
-  margin: 0%;
-  padding: 0%;
-}
-li{
-  list-style: none;
-  float: left;
   margin: 0%;
   padding: 0%;
 }
