@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/groupLogin.css">
     <script type="text/javascript" src="../js/jquery-3.5.0.min.js"></script>
-    <script type="text/javascript" src="../js/tabmenu.js"></script>
+    <script type="text/javascript" src="../js/tab.js"></script>
     <title>団体ログイン</title>
 </head>
 
@@ -19,22 +19,23 @@
             <li class="merit">サークル・団体の新入会員を募集できます！</li>
             <li class="merit">サークル・団体をアピールできる機能が満載！</li>
         </ol>
-        <ul class="tab_btns">
-            <li class="tab_btn active_btn" href="#item1">団体アカウントをお持ちでない方</li>
-            <li class="tab_btn" href="#item2">団体アカウントをお持ちの方</li>
+        <ul class="tab">
+            <li class="tab__item"><span class="tab__link" data-tab-body="1">新規登録</span></li>
+            <li class="tab__item"><span class="tab__link" data-tab-body="2">ログイン</span></li>
         </ul>
-        <div class="tab_contents">
-            <div class="box active_box" id="item1">
+        <div class="tab-body">
+            <div class="tab-body__item tab-body__item--1 in">
+                <br>
                 <div class="box_title">サークル・学生団体を登録する</div>
                 <div class="admins_login">
 
                     <input name="email_signup" class="text_box" type="text" placeholder="メールアドレス">
-                    <input name="password" class="text_box" type="text" placeholder="パスワード">
-                    <input name="password_re" class="text_box" type="text" placeholder="パスワード再入力">
+                    <br>
                     <button class="admins_submit_btn" type="submit">同意して次へ</button>
                 </div>
             </div>
-            <div class="box" id="item2">
+            <div class="tab-body__item tab-body__item--2">
+                <br>
                 <div class="box_title">ログイン</div>
                 <div class="admins_login">
                     <form action="/admins/login/#login" id="CircleLoginForm" method="post" accept-charset="utf-8">

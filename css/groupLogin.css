@@ -1,5 +1,5 @@
 @import url("./global.css");
-@import url("./tabmenu.css");
+@import url("./tab.css");
 
 .headline{
     text-align: center;
@@ -14,6 +14,18 @@ h2{
     border-bottom: 1px solid var(--collor-sub);
 }
 
+.tab-body{
+    height:180px;
+}
+.tab:after{
+    width:50%;
+}
+.tab--1:after{
+    left:0;
+}
+.tab--2:after{
+    left:50%;
+}
 .essential{
     background-color: var(--collor-yobi);
     float: right;
@@ -24,19 +36,18 @@ h2{
     height: 20px;
 }
 .admins_submit_btn {
-    padding: 0.5em 1em;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
     text-decoration: none;
-    background: #668ad8;/*ボタン色*/
     color: #FFF;
-    border-bottom: solid 4px #627295;
-    border-radius: 3px;
+    background-image: linear-gradient(45deg, var(--collor-main) 0%, var(--collor-main-gra) 100%);
+    transition: .4s;
     position: absolute;
-    bottom: 10px;
     left: 320px;
-}
-.admins_submit_btn:active {
-    /*ボタンを押したとき*/
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);/*下に動く*/
-    border-bottom: none;/*線を消す*/
-}
+    top: 120px;
+  }
+  
+  .admins_submit_btn:hover {
+    background-image: linear-gradient(45deg, var(--collor-main) 0%, var(--collor-main-gra) 100%);
+  }
