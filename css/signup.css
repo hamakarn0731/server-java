@@ -1,6 +1,4 @@
 @import url("./global.css");
-@import url("./tab.css");
-
 .headline{
     text-align: center;
     color: lightcoral;
@@ -14,26 +12,6 @@ h2{
     border-bottom: 1px solid var(--collor-sub);
 }
 
-.tab-body{
-    height:220px;
-}
-form{
-    height: 170px;
-}
-
-.tab:after{
-    width:50%;
-}
-.tab--1:after{
-    left:0;
-}
-.tab--2:after{
-    left:50%;
-}
-.text_box{
-    width: 500px;
-    height: 20px;
-}
 .submit_btn {
     display: inline-block;
     padding: 7px 20px;
@@ -49,3 +27,18 @@ form{
     background-image: linear-gradient(45deg, var(--collor-main) 0%, var(--collor-main-gra) 100%);
 }
 
+form{
+    width: 400px;
+    border: 4px solid var(--collor-sub);
+}
+th{
+    text-align: left;
+}
+.select_box{
+    height: 21px;
+    width: 173px;
+    padding: 1px;
+}
+.submit{
+    margin: 5px;
+}

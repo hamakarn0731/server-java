@@ -27,29 +27,32 @@
             <div class="tab-body__item tab-body__item--1 in">
                 <br>
                 <div class="box_title">サークル・学生団体を登録する</div>
-                <div class="admins_login">
-
-                    <input name="email_signup" class="text_box" type="text" placeholder="メールアドレス">
-                    <br>
-                    <button class="admins_submit_btn" type="submit">同意して次へ</button>
+                <div class="box_content">
+                    <form class="container" action="" method="post" accept-charset="utf-8">
+                        <input name="email_signup" class="text_box" type="text" placeholder="メールアドレス">
+                        <br>
+                        <p class="attention_text2">
+                            登録前に<a href="/" target="_blank">利用規約</a>をお読みいただき、同意された上で登録をお願いいたします。
+                        </p>
+                        <button class="submit_btn" type="submit">同意して次へ</button>
+                    </form>
                 </div>
             </div>
             <div class="tab-body__item tab-body__item--2">
                 <br>
                 <div class="box_title">ログイン</div>
-                <div class="admins_login">
-                    <form action="/admins/login/#login" id="CircleLoginForm" method="post" accept-charset="utf-8">
+                <div class="box_content">
+                    <form class="container" action="" method="post" accept-charset="utf-8">
 
                         <input name="email_login" novalidate="novalidate" class="text_box" type="text"
                             placeholder="メールアドレス">
                         <input name="password_login" class="text_box" type="password" placeholder="パスワード">
-                        <a href="/" class="reset_link">
-                            <br>
+                        <br>
+                        <a href="/" class="reset_link">  
                             ⇒パスワードをお忘れの方はコチラ
                         </a>
-                        <div class="submit">
-                            <input class="admins_submit_btn" type="submit" value="ログインする">
-                        </div>
+                        <br>
+                        <button class="submit_btn" type="submit">ログインする</button>
                     </form>
                 </div>
             </div>

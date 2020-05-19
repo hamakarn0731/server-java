@@ -4,45 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/login.css">
     <title>個人ログイン</title>
 </head>
 
 <body>
     <h1 class="headline">個人ログイン</h1>
-    <div class="login_box">
+    <div class="container">
         <form action="/" method="post" accept-charset="utf-8">
-            <div class="login_input_box">
-                <table class="table1">
-                    <tbody>
-                        <tr>
-                            <th>メールアドレス<span class="essential">必須</span></th>
-                            <td>
-                                <div class="input text required">
-                                    <input name="email" class="table_text_box" type="text" required="required">
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th>パスワード<span class="essential">必須</span></th>
-                            <td>
-                                <div class="input password required">
-                                    <input name="password" class="table_text_box" type="password" required="required">
-                                </div>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-                <div class="login_btn_box">
-                    <div class="submit">
-                        <input class="login_submit_btn" type="submit" value="ログイン">
-                    </div>
-                    <div class="reset_box">
-                        <a href="/" class="reset_link">&gt;&gt;パスワードを忘れた方はコチラ</a>
-                    </div>
+            <div class="container">
+                <div class="input text required">
+                    <input name="email" class="text_box" type="text" required="required" placeholder="メールアドレス">
+                </div>
+                <div class="input password required">
+                    <input name="password" class="text_box" type="password" required="required" placeholder="パスワード">
+                </div>
+                <br>
+                <input class="submit_btn" type="submit" value="ログイン">
+                <br>
+                <div class="reset_box">
+                    <a href="/" class="reset_link">&gt;&gt;パスワードを忘れた方はコチラ</a>
                 </div>
             </div>
         </form>
-        <div class="signup_link">
+        <div class="container">
             <p class="text_cnt">会員登録されていない方はコチラ</p>
             <a href="/" class="signup_btn">新規会員登録</a>
         </div>

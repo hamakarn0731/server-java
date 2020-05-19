@@ -6,15 +6,10 @@ document.addEventListener('DOMContentLoaded', function(){
     var target = $(e.currentTarget);
     //タブの中身の表示非表示
     var num =　target.data("tab-body");
-    $(".tab-body__item.in").addClass("out");
+    $(".tab-body__item.in").removeClass("in");
     $(".tab-body__item--"+num).addClass("in");
     //タブの表示非表示
     $tab.removeClass();
     $tab.addClass("tab tab--"+num);
   });
-  $tab_body_item.on("transitionend",function(e){
-    console.log(e);
-    $(".tab-body__item.out").removeClass("in out");
-  })
-
 });

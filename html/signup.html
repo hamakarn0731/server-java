@@ -4,34 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/signup.css">
     <title>個人会員登録</title>
 </head>
 
 <body>
     <h1 class="headline">新規会員登録</h1>
-    <div class="merit">
+    <div class="merits">
         <h2>会員になると使える機能!</h2>
         <ol>
-            <li>
+            <li class="merit">
 
             </li>
-            <li>
+            <li class="merit">
 
             </li>
-            <li>
+            <li class="merit">
 
             </li>
         </ol>
     </div>
-    <div class="attention_box">
-        <div class="other_account">
-            <p>以下のアカウントでもログインすることができます。</p>
-            <a href="/">google</a>
-            <br>
-            <a href="/">twitter</a>
-            <br>
-            とかかな
-        </div>
+    <div class="attention_box container">
         <div class="attention_text">
             <p>
                 登録完了メールが 迷惑メールフォルダに入る可能性があります。
@@ -39,85 +32,88 @@
                 xxxxxx@xxxxx.comから メールを受け取れるようにしてください。
             </p>
         </div>
+        <p class="attention_text">
+            登録前に<a href="/" target="">利用規約</a>をお読みいただき、同意された上で登録をお願いいたします。
+        </p>
     </div>
-    <p class="attention_text2">登録前に
-        <a href="/" target="_blank">利用規約</a>をお読みいただき、同意された上で登録をお願いいたします。
-    </p>
-    <form action="/" method="post">
-        <table class="signup_table">
-            <tr>
-                <th>氏名<span class="essential">必須</span></th>
-                <td>
-                    <div class="input text required">
-                        <input name="name" class="table_text_box" type="text" required="required" />
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th>大学名<span class="essential">必須</span></th>
-                <td>
-                    <div class="input text required">
-                        <input name="university" class="table_text_box" type="text" required="required" />
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th>学部学科<span class="essential">必須</span></th>
-                <td>
-                    <div class="input text required">
-                        <input name="department" class="table_text_box" type="text" required="required" />
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th>学年<span class="essential">必須</span></th>
-                <td>
-                    <div class="select_area">
-                        <select name="grade" class="select_box" required="required">
-                            <option value="">選択してください</option>
-                            <option value="入学前">入学前</option>
-                            <option value="学部1">学部1年</option>
-                            <option value="学部2">学部2年</option>
-                            <option value="学部3">学部3年</option>
-                            <option value="学部4">学部4年</option>
-                            <option value="学部5">学部5年</option>
-                            <option value="学部6">学部6年</option>
-                            <option value="修士1">修士1年</option>
-                            <option value="修士2">修士2年</option>
-                            <option value="既卒">既卒</option>
-                        </select>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th>メールアドレス<span class="essential">必須</span></th>
-                <td>
-                    <div class="input text required">
-                        <input name="email" class="table_text_box" type="text" required="required" />
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th>パスワード<span class="essential">必須</span></th>
-                <td>
-                    <div class="input password required">
-                        <input name="password" class="table_text_box" type="password" required="required" />
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <th>パスワード(確認)<span class="essential">必須</span></th>
-                <td>
-                    <div class="input password required">
-                        <input name="password_re" class="table_text_box" type="password" required="required" />
-                    </div>
-                </td>
-            </tr>
-        </table>
-        <div class="submit">
-            <input class="submit_btn" type="submit" value="この内容で登録する" />
-        </div>
-    </form>
+    <div class="container">
+        <form class="container" action="/" method="post">
+            <table class="signup_table">
+                <tr>
+                    <th>氏名</th>
+                    <td>
+                        <div class="text required">
+                            <input name="name" class="table_text_box" type="text" required="required" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>大学名</th>
+                    <td>
+                        <div class="text required">
+                            <input name="university" class="table_text_box" type="text" required="required" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>学部学科</th>
+                    <td>
+                        <div class="text required">
+                            <input name="department" class="table_text_box" type="text" required="required" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>学年</th>
+                    <td>
+                        <div class=" select_area">
+                            <select name="grade" class="select_box" required="required">
+                                <option value="">選択してください</option>
+                                <option value="入学前">入学前</option>
+                                <option value="学部1">学部1年</option>
+                                <option value="学部2">学部2年</option>
+                                <option value="学部3">学部3年</option>
+                                <option value="学部4">学部4年</option>
+                                <option value="学部5">学部5年</option>
+                                <option value="学部6">学部6年</option>
+                                <option value="修士1">修士1年</option>
+                                <option value="修士2">修士2年</option>
+                                <option value="既卒">既卒</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>メールアドレス</th>
+                    <td>
+                        <div class="text required">
+                            <input name="email" class="table_text_box" type="text" required="required" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>パスワード</th>
+                    <td>
+                        <div class="password required">
+                            <input name="password" class="table_text_box" type="password" required="required" />
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>パスワード(確認)</th>
+                    <td>
+                        <div class="password required">
+                            <input name="password_re" class="table_text_box" type="password" required="required" />
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="submit">
+                <input class="submit_btn" type="submit" value="この内容で登録する" />
+            </div>
+        </form>
+    </div>
+
 </body>
 
 </html>
