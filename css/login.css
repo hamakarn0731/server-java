@@ -1,0 +1,25 @@
+@import url("./global.css");
+
+.headline{
+    text-align: center;
+    color: lightcoral;
+}
+.text_box{
+    width: 500px;
+    height: 20px;
+}
+.submit_btn {
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, var(--collor-main) 0%, var(--collor-main-gra) 100%);
+    transition: .4s;
+}
+.submit_btn:hover {
+    background-image: linear-gradient(45deg, var(--collor-main) 0%, var(--collor-main-gra) 100%);
+}
+
+.text_cnt{
+    margin-bottom: 1px;
+}

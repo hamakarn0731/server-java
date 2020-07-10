@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/groupLogin.css">
+    <script type="text/javascript" src="../js/jquery-3.5.0.min.js"></script>
+    <script type="text/javascript" src="../js/tab.js"></script>
+    <title>団体ログイン</title>
+</head>
+
+<body>
+    <h1 class="headline">団体ログイン</h1>
+    <div class="admins_signup">
+        <h2>サークル・学生団体を掲載するには「団体アカウント」が必要です。</h2>
+        <ol>
+            <li class="merit">サークル・団体の掲載は無料です！</li>
+            <li class="merit">サークル・団体の新入会員を募集できます！</li>
+            <li class="merit">サークル・団体をアピールできる機能が満載！</li>
+        </ol>
+        <ul class="tab">
+            <li class="tab__item"><span class="tab__link" data-tab-body="1">新規登録</span></li>
+            <li class="tab__item"><span class="tab__link" data-tab-body="2">ログイン</span></li>
+        </ul>
+        <div class="tab-body">
+            <div class="tab-body__item tab-body__item--1 in">
+                <br>
+                <div class="box_title">サークル・学生団体を登録する</div>
+                <div class="box_content">
+                    <form class="container" action="" method="post" accept-charset="utf-8">
+                        <input name="email_signup" class="text_box" type="text" placeholder="メールアドレス">
+                        <br>
+                        <p class="attention_text2">
+                            登録前に<a href="/" target="_blank">利用規約</a>をお読みいただき、同意された上で登録をお願いいたします。
+                        </p>
+                        <button class="submit_btn" type="submit">同意して次へ</button>
+                    </form>
+                </div>
+            </div>
+            <div class="tab-body__item tab-body__item--2">
+                <br>
+                <div class="box_title">ログイン</div>
+                <div class="box_content">
+                    <form class="container" action="" method="post" accept-charset="utf-8">
+
+                        <input name="email_login" novalidate="novalidate" class="text_box" type="text"
+                            placeholder="メールアドレス">
+                        <input name="password_login" class="text_box" type="password" placeholder="パスワード">
+                        <br>
+                        <a href="/" class="reset_link">  
+                            ⇒パスワードをお忘れの方はコチラ
+                        </a>
+                        <br>
+                        <button class="submit_btn" type="submit">ログインする</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
